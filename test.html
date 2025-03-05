@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Formulaire d'Inscription</h2>
+
+    <form id="inscriptionForm">
+        <label for="numero">Numéro :</label>
+        <input type="number" id="numero" required><br><br>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" required><br><br>
+
+        <label for="age">Âge :</label>
+        <input type="number" id="age" required><br><br>
+
+        <label for="sexe">Sexe :</label>
+        <select id="sexe" required>
+            <option value="">Sélectionnez</option>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+        </select><br><br>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+
+    <h2>Liste des Inscrits</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Numéro</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Âge</th>
+                <th>Sexe</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+
+
+  <script src="test.js"></script>
+</body>
+</html>

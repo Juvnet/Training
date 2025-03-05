@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center p-6 bg-gray-100 min-h-screen">
+    <h2 class="text-2xl font-bold mb-4">Gestionnaire de Tâches</h2>
+    <div class="mb-4 flex flex-col items-center gap-2">
+        <input type="text" id="taskInput" placeholder="Ajouter une tâche" class="p-2 border rounded-md shadow-sm">
+        <input type="date" id="taskDate" class="p-2 border rounded-md shadow-sm">
+        <button onclick="addTask()" class="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">Ajouter</button>
+    </div>
+    <ul id="taskList" class="w-full max-w-md"></ul>
+
+    <script src="gestion.js"></script>
+</body>
+</html>

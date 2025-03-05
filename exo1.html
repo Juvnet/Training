@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte avec Image Ronde en Haut à Gauche</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    
+    <!-- Module de Carte -->
+    <div class="relative max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden p-6">
+        <!-- Image positionnée en haut à gauche -->
+        <img class="w-24 h-24 rounded-full object-cover absolute top-4 left-4 border-4 border-white shadow-md" 
+             src="image-product-desktop.jpg" 
+             alt="Image de profil">
+        
+        <div class="mt-20"> <!-- Décalage du contenu pour éviter qu'il chevauche l'image -->
+            <h2 class="text-xl font-semibold text-gray-800">Nom de la personne</h2>
+            <p class="mt-2 text-gray-600">Ceci est une brève description de la carte avec une image ronde en haut à gauche.</p>
+            <button class="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">En savoir plus</button>
+        </div>
+    </div>
+
+</body>
+</html>
